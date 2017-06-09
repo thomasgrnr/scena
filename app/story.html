@@ -1,0 +1,6 @@
+<md-subheader class="md-no-sticky">{{story.title}}</md-subheader>
+<md-list-item ng-repeat="step in story.steps">
+    <md-checkbox ng-model="step.selected"></md-checkbox>
+    <p>{{step.title}}</p>
+    <md-icon class="md-secondary" ng-click="" aria-label="Delete">delete</md-icon>
+</md-list-item>

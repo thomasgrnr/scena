@@ -1,0 +1,57 @@
+{
+  "filtering": [
+    {
+      "id": 1,
+      "title": "section1",
+      "stories": [
+        {
+          "title": "story1",
+          "steps": [
+            {
+              "title": "Having this",
+              "content": "",
+              "type": "assert",
+              "selected": false
+            },
+            {
+              "title": "Click on that",
+              "content": "",
+              "type": "action",
+              "selected": false
+            },
+            {
+              "title": "Toaster should show :",
+              "content": "Error 404",
+              "type": "result",
+              "selected": false
+            }
+          ]
+        },
+        {
+          "title": "story2",
+          "steps": [
+            {
+              "title": "Having this",
+              "content": "",
+              "type": "assert",
+              "selected": false
+            }]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "section2"
+    },
+    {
+      "title": "section3",
+      "stories": [],
+      "id": 3
+    },
+    {
+      "title": "toto",
+      "stories": [],
+      "id": 4
+    }
+  ]
+}

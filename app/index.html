@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="Scena">
+<head>
+  <meta charset="utf-8">
+  <title>Scena</title>
+  <link rel="stylesheet" href="app.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <link rel="stylesheet" href="/bower_components/angular-material/angular-material.css">
+</head>
+<body ng-controller="RootController as rootCtrl">
+
+    <section ng-repeat="section in rootCtrl.sections"></section>
+
+  <md-button class="md-raised md-primary" ng-show="!rootCtrl.addingNewSection" ng-click="rootCtrl.addingNewSection=true">Add new section</md-button>
+
+  <add-new-section></add-new-section>
+
+  <!-- Angular Material requires Angular.js Libraries -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-aria/angular-aria.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-material/angular-material.js"></script>
+
+  <!-- Angular Material Library -->
+  <script src="bower_components/angular-messages/angular-messages.js"></script>
+
+  <!-- App -->
+  <script type="text/javascript" src="app.js"></script>
+</body>
+</html>

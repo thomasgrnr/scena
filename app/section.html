@@ -1,0 +1,9 @@
+<md-header>
+<div layout="row" class="scenario-title">
+  <h2 layout-align="center center">{{section.title}}</h3>
+  <md-button class="md-icon-button" aria-label="Delete" ng-click="rootCtrl.remove(section.id)">
+    <md-icon>delete</md-icon>
+  </md-button>
+</div>
+</md-header>
+<story ng-repeat="story in section.stories"></story>

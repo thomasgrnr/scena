@@ -1,0 +1,9 @@
+<form ng-show="rootCtrl.addingNewSection" name="adding-new-section">
+  <md-input-container class="md-block">
+    <label>Section Title</label>
+    <input name="title" ng-model="new_section.title">
+  <div>
+    <md-button type="submit" class="md-primary" ng-click="rootCtrl.add(new_section); rootCtrl.addingNewSection=false">Add</md-button>
+     <md-button ng-click="rootCtrl.reset(new_section); rootCtrl.addingNewSection=false">Cancel</md-button>
+  </div>
+</form>
